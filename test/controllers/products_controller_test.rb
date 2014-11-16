@@ -34,10 +34,6 @@ class ProductsControllerTest < ActionController::TestCase
     assert_redirected_to product_path(assigns(:product))
   end
 
-  def product_path(i)
-    # code here
-  end
-
   test 'should show product' do
     get :show, id: @product
     assert_response :success
@@ -53,19 +49,11 @@ class ProductsControllerTest < ActionController::TestCase
     assert_redirected_to product_path(assigns(:product))
   end
 
-  def product_path(i)
-    # code here
-  end
-
   test 'should destroy product' do
     assert_difference('Product.count', -1) do
       delete :destroy, id: @product
     end
 
     assert_redirected_to products_path
-  end
-
-  def products_path(products_path)
-    # code here
   end
 end

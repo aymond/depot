@@ -8,7 +8,7 @@
 Product.delete_all
 
 Product.create!(title: 'Programming Ruby 1.9 & 2.0',
-                description: %{<p>Ruby is the fastest growing and most exiting dynamic language out there. </p>},
+                description: '<p>Ruby is the fastest growing and most exiting dynamic language out there. </p>',
                 image_url: 'ruby.jpg',
                 price: 49.95)
 
